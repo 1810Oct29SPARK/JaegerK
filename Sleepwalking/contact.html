@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+    <h1> Contact Us </h1>
+    </header>
+    <nav>
+            <a href="SleepwalkingMain.html"> Home </a>
+            <a href="testimonials.html"> Sleep Walking Testimonials</a>
+            <a href="support.html">Support Groups</a>
+            <a href="contact.html"> Contact us</a>
+    </nav>
+    <p> Have more questions about sleepwalking?  <br> Contact us by filling out the form below.</p>
+
+    <form action="submitted.html" method="POST">
+        <fieldset>
+            <legend>Information</legend>
+            <input class="inputStyle" type="text" placeholder="Name" required="true"/>
+                <br>
+                <br>
+            <input class="inputStyle" type="email" placeholder="Email" required="true"/>
+                <br>
+                <br>
+            <input class="inputStyle" type="tel" placeholder="Phone Number" required="true"/>
+                <br>
+                <br>
+            <textarea class="inputStyle" style="height:70px; resize:none;" type="text" placeholder="Question" required="true"></textarea>
+                <br>
+                <br>
+        </fieldset>
+                <br>
+                <br>
+        <fieldset id="checkboxes" required="false">
+            <legend>Reason for Inquiry (Optional)</legend>
+            <input type="checkbox" value="myself" >Asking for myself<br>
+            <input type="checkbox" value="friend">Asking for a friend<br>
+            <input type="checkbox" value="research">For research purposes<br>
+            <input type="checkbox" value="general">Just want to know<br>
+        </fieldset>
+                <br>
+                <br>
+            <input type="submit"/>
+    </form>
+</body>
+
+</html>
