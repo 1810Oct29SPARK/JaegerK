@@ -1,3 +1,5 @@
+The theme of my SPARK project is US National Parks.
+
 7 Use Cases for my National Parks Website:
 	1. Obtain information for planning a road trip
 	2. Find hiking trails (using a map)
