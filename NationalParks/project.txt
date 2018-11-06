@@ -1,13 +1,14 @@
-The theme of my SPARK project is US National Parks.
+The theme of my SPARK project is YosemiteUS National Park.
 
-7 Use Cases for my National Parks Website:
-	1. Obtain information for planning a road trip
+7 Use Cases for my website:
+	1. Obtain information for planning a trip (how much it costs, 
+how long it will take to visit each site, etc.)
 	2. Find hiking trails (using a map)
-	3. Find general information about National Parks (what qualifies 
-a National Park)
+	3. Find general information about Yosemite National Parks (what 
+qualifies it as a National Park)
 	4. Buy merchandise (t-shirts, cups, posters, etc.)
-	5. Checking current conditions of the parks/trails in the parks 
+	5. Checking current conditions of the park/trails in the park. 
 (forest fires, road closures, weather conditions, etc.)
-	6. Read blogs from people who have visited each park
-	7. Donate money to the parks
+	6. Read blogs from people who have visited the park
+	7. Donate money to the park
 	 
