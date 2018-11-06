@@ -1,4 +1,4 @@
-The theme of my SPARK project is YosemiteUS National Park.
+The theme of my SPARK project is Yosemite National Park.
 
 7 Use Cases for my website:
 	1. Obtain information for planning a trip (how much it costs, 
