@@ -1,6 +1,6 @@
 
 
-let getUniversityWithPromise = function(){
+let writeList = function(){
     fetch('https://opentdb.com/api.php?amount=10')
     .then(r => r.json())
     .then(response => {
@@ -26,5 +26,5 @@ let getUniversityWithPromise = function(){
     });
 }
 
-window.onload(getUniversityWithPromise());
 
+document.getElementById("button").addEventListener('click',writeList);
