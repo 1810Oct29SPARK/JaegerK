@@ -1,0 +1,22 @@
+body {
+    background-color:#white;
+    text-align: center;
+}
+
+.header {
+    background-color:white;
+    border-color: black;
+    border-radius: 10%;
+    padding:10px;
+    border-style: solid;
+    text-align: center;
+    color: black;
+}
+
+
+#main-content-container {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    margin: 25px auto;
+}
