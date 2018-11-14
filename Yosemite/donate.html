@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <script src="yosemite.js"></script>
+</head>
+<body>
+    <h1> Donate </h1>
+
+    <nav>
+            <a href="Main.html"> Home </a>
+            <a href="current.html"> Current Conditions</a>
+            <a href="planyourtrip.html">Plan your Trip</a>
+            <a href="merchandise.html">Merchandise</a>
+            <a href="donate.html"> Donate</a>
+    </nav>
+
+    <form action="submitted.html" method="POST">
+            <fieldset>
+                <legend>Information</legend>
+                <input class="inputStyle" type="text" placeholder="Name" required="true"/>
+                    <br>
+                    <br>
+                <input class="inputStyle" type="email" placeholder="Email" required="true"/>
+                    <br>
+                    <br>
+                <input class="inputStyle" type="tel" placeholder="Phone Number" required="true"/>
+                    <br>
+                    <br>
+            </fieldset>
+                    <br>
+                    <br>
+            <fieldset id="checkboxes" required="true">
+                <legend>Amount to be donated</legend>
+                <input type="checkbox" value="10" >$10<br>
+                <input type="checkbox" value="25">$25<br>
+                <input type="checkbox" value="50">$50<br>
+                <input type="checkbox" value="100">$100<br>
+            </fieldset>
+                    <br>
+                    <br>
+                <input type="submit"/>
+        </form>
+
+    <aside id="donateAside">
+        <img src="https://www.nps.gov/articles/images/yose-main.jpg">
+    </aside>
+</body>
+</html>
