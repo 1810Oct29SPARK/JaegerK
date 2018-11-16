@@ -14,5 +14,20 @@ public class Driver {
 		Car carTwo = new Car(1972,"DeLorean","DMC");
 		//check out the toString result
 		System.out.println("carTwo: "+carTwo.toString());
+
+		//try to view instance variables of carTwo
+		//this does not compile    System.out.prinln(carTwo.model);
+		System.out.println("model of carTwo: "+carTwo.getModel());
+
+		//reset the model of carTwo
+		carTwo.setModel("NotDelorean");
+		System.out.println("model of carTwo: "+carTwo.getModel());
+
+		//test out carTwo's inherited move() method
+		carTwo.move();
+
+		//Working on printing Ferrari
+		Car carThree = new Car();
+		System.out.println("Ferrari: "+Ferrari.move());
 	}
 }
