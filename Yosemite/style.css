@@ -1,6 +1,5 @@
 body {
     background-color: black;
-    /* background-image:url("background.jpg"); */
 }
 
 h1 {
@@ -42,6 +41,10 @@ h1 {
     background-image: url("rockclimbing.jpg");
 }
 
+#rockclimbingDiv {
+    margin-left: 50px;
+    margin-right: 50px;
+}
 .hiking {
     background-image: url("hiking.jpg");
 }
@@ -53,6 +56,36 @@ h1 {
 .camping {
     background-image: url("camping.jpg");
 }
+
+#campingList {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#campingList li {
+    padding: 0px 0px 80px 0px;
+}
+
+#campingAside {
+    width: 200px;
+    float: right;
+    margin: 0px 350px 0px 50px;;
+
+}
+
+#campingAside img {
+    height: 250px;
+    width: 350px;
+}
+
+#campingAside figcaption {
+    color: white; 
+    text-align: center;
+     width: 250px; 
+     margin: 0px 0px 50px 50px;
+}
+
+
 nav {
     padding: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -81,19 +114,6 @@ nav a {
     position: relative;
     margin-left: 100px;
     margin-bottom: 50px;
-}
-
-aside {
-    background-color: black;
-    border-color: white;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
-    width: 300px;
-    height: 1000px;
-    padding: 20px;
-    color: white;
-    margin: 0px 100px 10px 120px;
 }
 
 p {
@@ -134,7 +154,7 @@ a h2 {
 
 
 .merchandiseDiv {
-    margin: 50px 0px 50px 160px;
+    margin: 50px 0px 50px 200px;
     height: 300px;
 }
 
@@ -178,7 +198,7 @@ h3 {
     text-align: center;
    
 }
-td {
+#weatherTable td {
     font-size: 20px;
     padding: 10px 50px 10px 50px;
     text-align: center;
@@ -189,28 +209,87 @@ td {
 
 table img {
     height: 35px;
-    weight: 35px;
+    width: 35px;
     margin: 10px 10px 10px 10px;
     
 }
 
 form {
     text-align: left;
-    margin: 0px 0px 0px 150px;
+    margin: 0px 0px 0px 175px;
     color: white;
     width: 400px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
+
 }
 
 #donateAside {
     border: none;
-    float: left;
-    position: relative;
-    height: 50px;
-    width: 50px;
+    float: right;
+    width: 300px;
+    height: 1000px;
+    padding: 10px 20px 20px 50px;
+    color: white;
+    margin: 0px 500px 10px 0px;
 }
 
+
+#tripInfo {
+    margin: 800px 0px 0px 150px;
+    width: 1040px;
+}
+
+#viewpointInfo {
+    margin: 0px 0px 0px 160px;
+    width: 1040px;
+}
+
+.tripInfoTitle {
+    font-size: 30px;
+    border-bottom-color: white;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+h4 {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+li {
+    color: white;
+}
+
+strong {
+    font-size: 20px; 
+    color: white; 
+    margin-left: 20px;
+}
+
+th {
+    color: white;
+    font-family: 20px;
+}
+
+#viewpointsList td {
+    color: white;
+    font-size: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+#viewpointsList td img {
+    height: 200px;
+    width: 300px;
+}
+
+#viewpointsList figcaption {
+    margin-bottom: 70px;
+}
 /*SLIDESHOW CODE*/
 
 * {box-sizing:border-box}
@@ -296,3 +375,96 @@ form {
   to {opacity: 1}
 }
 
+/* Zoom Modal */
+.myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 10px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.modal p {
+    text-align: center;
+    color: white;
+    width: 50%;
+    margin-left: 325px;
+}
