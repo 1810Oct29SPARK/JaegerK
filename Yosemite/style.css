@@ -1,6 +1,5 @@
 body {
-    background-color: black;
-}
+    background-color: black }
 
 h1 {
     text-align: center;
@@ -151,7 +150,6 @@ a h2 {
     color: blue;
     text-decoration: underline;
 }
-
 
 .merchandiseDiv {
     margin: 50px 0px 50px 200px;
@@ -467,4 +465,20 @@ th {
     color: white;
     width: 50%;
     margin-left: 325px;
+}
+
+#prices {
+    margin: 0px 0px 0px 20px;
+}
+
+#prices td {
+    color: white;
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+}
+
+#prices th {
+    text-decoration: underline;
+    font-size: 20px;
 }
