@@ -10,7 +10,7 @@
 </head>
 <body onload="showSlides()">
     <header>
-        <h1 class="main-title">Yosemite National Park</h1>
+        <h1 class="main-title" id="top">Yosemite National Park</h1>
     </header>
 
     <nav>
@@ -18,25 +18,21 @@
             <a href="current.html"> Current Conditions</a>
             <a href="planyourtrip.html">Plan your Trip</a>
             <a href="merchandise.html">Merchandise</a>
-            <a href="donate.html"> Donate</a>
     </nav>
 
-    <!-- Slideshow container -->
     <div class="slideshow-container">
         <div class="mySlides fade">
           <img src="background.jpg" style="width:1000px; height:400px;">
-          <!-- <div class="text">Caption Text</div> -->
         </div>
       
         <div class="mySlides fade">
           <img src="background2.jpg" style="width:1000px; height:400px;">
-          <!-- <div class="text">Caption Two</div> -->
         </div>
       
         <div class="mySlides fade">
           <img src="background3.jpg" style="width:1000px; height:400px;">
-          <!-- <div class="text">Caption Three</div> -->
         </div>
+        <br>
         <br>
 
     <div>
@@ -45,7 +41,7 @@
         <p style="text-align: center;">Open 12:00 AM - 11:59 PM daily</p>
         <br>
         <br>
-        <table id="prices">
+        <table id="prices" border="2">
             <thead>
               <tr>
                 <th>Vehicle Type</th>
@@ -59,6 +55,7 @@
                 <td>Non-commercial car, pickup truck, RV, or van with 15 or fewer passenger seats</td>
                 <td>$35</td>
                 <td>7 days</td>
+                <td>N/A</td>
               </tr>
               <tr>
                 <td>Motorcycle</td>
@@ -82,25 +79,51 @@
                   <td>Commercial Tour (van, 7-15 seats)</td>
                   <td>$125</td>
                   <td>7 days</td>
-                  <td>Per vehicle, not person</td>
+                  <td>N/A</td>
               </tr>
               <tr>
                   <td>Commercial Tour (mini bus, 16-25 seats)</td>
                   <td>$200</td>
                   <td>7 days</td>
-                  <td>Per vehicle, not person</td>
+                  <td>N/A</td>
               </tr>
               <tr>
                   <td>Commercial Tour (motor coach, 26 or more seats)</td>
                   <td>$300</td>
                   <td>7 days</td>
-                  <td>Per vehicle, not person</td>
+                  <td>N/A</td>
               </tr>
             </tbody>
         </table>
       </aside>
       <br>
       <br>
+
+
+      <footer>
+          <h2 style="color: white; text-align: center;">Donate to Yosemite National Park</h2>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" style="text-align: center;">
+    
+              <input type="hidden" name="business"
+                  value="yosemite@nps.com">
+      
+              <!-- Create a donate button -->
+              <input type="hidden" name="cmd" value="_donations">
+      
+              <input type="hidden" name="item_name" value="National Park Foundation">
+              <input type="hidden" name="item_number" value="Donation - Yosemite">
+              <input type="hidden" name="currency_code" value="USD">
+      
+              <!-- Display the payment button. -->
+              <input type="image" name="submit"
+              src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif"
+              alt="Donate">
+              <img alt="" width="1" height="1"
+              src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+          </form>
+      <br>
+      <br>
+    </footer>
   </div>
       
 </body>
