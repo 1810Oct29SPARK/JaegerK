@@ -3,12 +3,10 @@ The theme of my SPARK project is Yosemite National Park.
 7 Use Cases for my website:
 	1. Obtain information for planning a trip (how much it costs, 
 how long it will take to visit each site, etc.)
-	2. Find hiking trails (using a map)
-	3. Find general information about Yosemite National Parks (what 
-qualifies it as a National Park)
-	4. Buy merchandise (t-shirts, cups, posters, etc.)
-	5. Checking current conditions of the park/trails in the park. 
-(forest fires, road closures, weather conditions, etc.)
-	6. Read blogs from people who have visited the park
+	2. Find hiking trails
+	3. Find information about camping
+	4. Find viewpoints
+	5. Checking current conditions of the park (weather conditions, alerts)
+	6. Buy merchandise (t-shirts, hats, etc.)
 	7. Donate money to the park
 	 
