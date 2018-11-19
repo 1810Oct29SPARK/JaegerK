@@ -88,7 +88,7 @@ let getNPSalertdata = function() {
 
 getNPSalertdata();
 
-//NPS API
+//NPS API (Camping)
 const NPSapikey = 'ST20MBOOcrZHBBZXij1k6THaDDQN2JJpDY4eyf6H' 
 const NPSCampingUrl = 'https://developer.nps.gov/api/v1/campgrounds?parkCode=yose&api_key=ST20MBOOcrZHBBZXij1k6THaDDQN2JJpDY4eyf6H'
 
@@ -115,9 +115,7 @@ getNPSdata();
 
 
 
-//Zoom Modal 
-
-// Get the modal
+///Creating the Viewpoint Modals
 
 window.onload = function() {
     var modal1 = document.getElementById('glacierPointModal');
@@ -170,7 +168,7 @@ window.onload = function() {
     })
 
     
-    // When the user clicks on <span> (x), close the modal
+    // Closing the Viewpoint Modals
     document.getElementById('close1').addEventListener("click", function() { 
         modal1.style.display = "none";
     })
