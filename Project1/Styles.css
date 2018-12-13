@@ -1,0 +1,12 @@
+.login {
+    text-align: center;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black;
+    padding: 50px;
+    margin: 50px;
+}
+
+form {
+    padding-bottom: 30px;
+}
