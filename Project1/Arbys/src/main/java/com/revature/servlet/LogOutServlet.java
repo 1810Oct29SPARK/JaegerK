@@ -24,8 +24,8 @@ public class LogOutServlet extends HttpServlet {
 			session.invalidate();
 		}
 		pw.println("<p>You are successfully logged out</p>");
-		pw.println("</div>");
 		pw.println("<a href=\"Arbys\">back to login</a>");
+		pw.println("</div>");
 		pw.println("</body></html>");
 	}
 
