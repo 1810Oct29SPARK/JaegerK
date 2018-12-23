@@ -1,3 +1,5 @@
+@charset "ISO-8859-1";
+
 .login {
     text-align: center;
     border-width: 5px;
@@ -9,4 +11,13 @@
 
 form {
     padding-bottom: 30px;
+}
+
+.logout {
+	text-align: center;
+	padding-left: 20px;
+}
+
+.display {
+	text-align: center;
 }
