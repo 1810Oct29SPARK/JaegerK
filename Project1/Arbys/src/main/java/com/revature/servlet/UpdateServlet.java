@@ -8,24 +8,31 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
-@WebServlet ("/Logout")
-public class LogOutServlet extends HttpServlet {
+import com.revature.dao.EmployeeDaoImpl;
+
+@WebServlet ("/Update")
+public class UpdateServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		EmployeeDaoImpl ed = new EmployeeDaoImpl();
+		
+		
+		
+		String ColumnName = request.getParameter("columnname");
+		String NewField = request.getParameter("newfield");
+		int EmployeeId = Integer.parseInt(request.getParameter("employeeid"));
+		
+		
+		ed.updateEmployee(ColumnName, NewField, EmployeeId);
 		response.setContentType("text/html");
+		
 		PrintWriter pw = response.getWriter();
-		request.getRequestDispatcher("loggedout.html").include(request, response);
-		HttpSession session = request.getSession(false);
-		if (session != null) {
-			session.invalidate();
-		}
-		pw.println("<p>You are successfully logged out</p>");
-		pw.println("<a href=\"Arbys\">Back to login</a>");
-		pw.println("</div>");
+		request.getRequestDispatcher("submitted.html").include(request, response);
+		pw.print("<p> Your information has been updated. </p>");
+		pw.println("<a href=\"InfoServlet\">Back to Home</a>");
 		pw.println("</body></html>");
 	}
 

@@ -8,24 +8,25 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
-@WebServlet ("/Logout")
-public class LogOutServlet extends HttpServlet {
+import com.revature.dao.ReimbursementsDAOImpl;
+
+@WebServlet ("/Approve")
+public class ApproveServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		ReimbursementsDAOImpl reimb = new ReimbursementsDAOImpl();
+		
+		int reimbursement_id = Integer.parseInt(request.getParameter("reimbursement_id"));
+		System.out.println(request.getParameter("reimbursement_id"));
+		reimb.approve(reimbursement_id);
 		response.setContentType("text/html");
+		
 		PrintWriter pw = response.getWriter();
-		request.getRequestDispatcher("loggedout.html").include(request, response);
-		HttpSession session = request.getSession(false);
-		if (session != null) {
-			session.invalidate();
-		}
-		pw.println("<p>You are successfully logged out</p>");
-		pw.println("<a href=\"Arbys\">Back to login</a>");
-		pw.println("</div>");
+		request.getRequestDispatcher("approved.html").include(request, response);
+		pw.print("<p> The reimbursement request with id " + reimbursement_id + " has been approved</p>");
+		pw.println("<a href=\"Info\">Back to Home</a>");
 		pw.println("</body></html>");
 	}
 

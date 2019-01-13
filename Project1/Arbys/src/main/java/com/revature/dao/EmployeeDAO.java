@@ -1,5 +1,7 @@
 package com.revature.dao;
 
+import java.util.List;
+
 import com.revature.beans.Employee;
 
 public interface EmployeeDAO {
@@ -11,7 +13,10 @@ public interface EmployeeDAO {
 
 	void deleteEmployee(int EmployeeId);
 
-	void updateEmployee(int EmployeeId, String EmployeeLastName, String EmployeeFirstName, String EmployeePosition,
-			double EmployeeSalary, double EmployeeHours);
+	void updateEmployee(String ColumnName, String NewField, int EmployeeId);
+	
+	List <Employee> listEmployees(String name);
+	
+	List <Employee> listAll();
 
 }

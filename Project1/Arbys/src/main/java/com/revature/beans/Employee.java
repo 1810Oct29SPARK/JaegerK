@@ -10,8 +10,9 @@ public class Employee {
 	private String position; 
 	private double salary; 
 	private double hours; 
+	private String reportsto;
 	
-	public Employee(int id, String lastname, String firstname, String position, double salary, double hours) {
+	public Employee(int id, String lastname, String firstname, String position, double salary, double hours, String reportsto) {
 		super();
 		this.id = id;
 		this.firstname = firstname;
@@ -19,6 +20,7 @@ public class Employee {
 		this.position = position;
 		this.salary = salary;
 		this.hours = hours;
+		this.reportsto = reportsto;
 	}
 
 	public int getId() {
@@ -68,13 +70,22 @@ public class Employee {
 	public void setHours(double hours) {
 		this.hours = hours;
 	}
+	
+	public String getReportsto() {
+		return reportsto;
+	}
+
+	public void setReportsto(String reportsto) {
+		this.reportsto = reportsto;
+	}
 
 	@Override
 	public String toString() {
 		return "Employee [id=" + id + ", lastname=" + lastname + ", firstname=" + firstname + ", position=" + position
-				+ ", salary=" + salary + ", hours=" + hours + "]";
+				+ ", salary=" + salary + ", hours=" + hours + ", reportsto=" + reportsto + "]";
 	}
 
+	
 	
 	
 	

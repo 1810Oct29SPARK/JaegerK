@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Reimbursement</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	crossorigin="anonymous">
+<link rel='stylesheet' href='styles/Styles.css'>
+<script src="arbys.js"></script>
+</head>
+<body>
+	<h1 class="text-center align-middle">Submit A Reimbursement</h1>
+	           <br>
+     <h4 class="mb-0 text-center lead align-middle">To submit a reimbursement, please fill out all fields below.
+	
+	
+	<div class="login">
+            <br>
+        <form action="Submitted" method="POST">
+        	<p>Employee ID</p>
+            <input class="inputStyle" type="number" required="true" name="employee_id">
+                <br>
+                <br>
+            <p>Reimbursement ID</p>
+            <input class="inputStyle" type="number" required="true" name="reimbursement_id" placeholder="ID + date(MMDDYY)">
+                <br>
+                <br>
+            <p>Description</p>
+            <input class="inputStyle description" type="text" required="true" name="description">
+                <br>
+                <br>
+            <p>Amount</p>
+            <input class="inputStyle" type="number" required="true" name="amount">
+                <br>
+                <br>
+            <input type="submit" value="Submit"/>
+        </form>
+    </div>
+    
+  
+
+
+</body>
+</html>

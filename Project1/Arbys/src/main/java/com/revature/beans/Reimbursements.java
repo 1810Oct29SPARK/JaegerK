@@ -10,12 +10,12 @@ public class Reimbursements {
 	private Blob img;
 	private String status;
 	
-	public Reimbursements(int id, String description, double amount, Blob img, String status) {
+	public Reimbursements(int id, String description, double amount, String status) {
 		super();
 		this.id = id;
 		this.description = description;
 		this.amount = amount;
-		this.img = img;
+//		this.img = img;
 		this.status = status;
 	}
 	public int getId() {
@@ -50,17 +50,16 @@ public class Reimbursements {
 		this.status = status;
 	}
 
-	public Blob getImg() {
-		return img;
-	}
+//	public Blob getImg() {
+//		return img;
+//	}
 
-	public void setImg(Blob img) {
-		this.img = img;
-	}
+//	public void setImg(Blob img) {
+//		this.img = img;
+//	}
 	@Override
 	public String toString() {
-		return "Reimbursements [id=" + id + ", description=" + description + ", amount=" + amount + ", img=" + img
-				+ ", status=" + status + "]";
+		return "Reimbursements [id=" + id + ", description=" + description + ", amount=" + amount + ", status=" + status + "]";
 	}
 
 }

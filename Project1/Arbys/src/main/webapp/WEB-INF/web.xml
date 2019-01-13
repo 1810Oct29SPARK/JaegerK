@@ -18,7 +18,7 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>InfoServlet</servlet-name>
-    <url-pattern>/InfoServlet</url-pattern>
+    <url-pattern>/Info</url-pattern>
   </servlet-mapping>
   <servlet>
     <description></description>
@@ -29,5 +29,45 @@
   <servlet-mapping>
     <servlet-name>LogOutServlet</servlet-name>
     <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ReimbursementServlet</display-name>
+    <servlet-name>ReimbursementServlet</servlet-name>
+    <servlet-class>com.revature.servlet.ReimbursementServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ReimbursementServlet</servlet-name>
+    <url-pattern>/Reimbursement</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SubmittedServlet</display-name>
+    <servlet-name>SubmittedServlet</servlet-name>
+    <servlet-class>com.revature.servlet.SubmittedServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SubmittedServlet</servlet-name>
+    <url-pattern>/Submitted</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ApproveServlet</display-name>
+    <servlet-name>ApproveServlet</servlet-name>
+    <servlet-class>com.revature.servlet.ApproveServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ApproveServlet</servlet-name>
+    <url-pattern>/Approve</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateServlet</display-name>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>com.revature.servlet.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/UpdateServlet</url-pattern>
   </servlet-mapping>
 </web-app>

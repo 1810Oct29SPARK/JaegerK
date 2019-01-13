@@ -32,10 +32,7 @@ public class ArbysServlet extends HttpServlet {
 		HttpSession session = req.getSession();
 		res.setContentType("text/html");
 		Login log = new Login(req.getParameter("username"),req.getParameter("password"));
-		System.out.println("Log: " + log);
-		System.out.println("New login created");
 		Employee e = authService.isValidUser(log);
-		System.out.println("New Employee Created: " + e);
 		
 		if (e != null) {
           session.setAttribute("empId", e.getId());
@@ -44,9 +41,9 @@ public class ArbysServlet extends HttpServlet {
           session.setAttribute("position", e.getPosition());
           session.setAttribute("salary", e.getSalary());
           session.setAttribute("hours", e.getHours());
+          session.setAttribute("manager", e.getReportsto());
           //redirect user to profile page if authenticated
-          res.sendRedirect("InfoServlet");
-          System.out.println("profile page is authenticated");
+          res.sendRedirect("Info");
       } else {
           session.setAttribute("problem", "invalid credentials");
           System.out.println("profile page is not authenticated");

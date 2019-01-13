@@ -26,8 +26,6 @@ public class LoginDAOImpl implements LoginDAO {
 
 	@Override
 	public int login(String username, String password) throws SQLException {
-		System.out.println("Username: " + username + "Password: " + password);
-
 		String sqlStmt = "SELECT EMPLOYEE_ID \r\n" + "FROM LOGIN\r\n"
 				+ "WHERE EMPLOYEE_USERNAME = ? AND EMPLOYEE_PASSWORD = ?";
 
@@ -41,7 +39,6 @@ public class LoginDAOImpl implements LoginDAO {
 
 		if (rs.next()) {
 			int empID = rs.getInt("EMPLOYEE_ID");
-			System.out.println("Employee ID: " + empID);
 			return empID;
 		} else {
 			return 0;

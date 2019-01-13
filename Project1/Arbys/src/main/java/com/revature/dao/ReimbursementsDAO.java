@@ -1,11 +1,14 @@
 package com.revature.dao;
 
+import java.util.List;
+
 import com.revature.beans.Reimbursements;
 
 public interface ReimbursementsDAO {
-	Reimbursements view(int id);
-	void submit(int id);
+	List <Reimbursements> view(int id);
+	List <Reimbursements> viewAll();
+	void submit(int emplid, int reimbid, String description, double amount, String status);
 	void update(int id);
-	boolean approve(int id);
+	void approve(int id);
 	void addImage(int id);
 }
